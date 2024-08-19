@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.8.2",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/raleway": "^5.0.19",
+    "@fontsource/share-tech": "^5.0.19",
+    "astro": "^4.11.6",
+    "astro-icon": "^1.1.1",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.1.68"
+  }
+}

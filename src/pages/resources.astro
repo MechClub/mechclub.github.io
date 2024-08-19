@@ -1,0 +1,159 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import CardAlternate from '../components/CardAlternate.astro';
+import CardDark from '../components/CardDark.astro';
+---
+<Layout>
+  <main class="m-auto p-4 max-w-full text-xl px-16">
+    <span class="columns-2 flex md:shrink-0 justify-items-center items-center justify-evenly">
+        <h1 class="text-mech-500 pt-40 content-center font-sans px-9"><span class="bg-clip-text text-8xl">Resources!</span></h1>
+    </span>
+    <p class="text-mech-500 py-1">Scroll below to find academic, mental health, & school resources.<br/>
+    </p>
+    <ul role="list" class="link-card-grid p-4 grid gap-8">
+      <Card
+              href="https://prod.virtualagent.utoronto.ca/"
+              title="Find Campus Resources"
+              body="Use Navi, UofT's resource navigator, to help you find academic, financial, & mental health resources on campus!"
+      />
+      <CardAlternate
+              href="/pizza/"
+              title="Pizza Discount"
+              body="If your comfort food is pizza, get a discount on it :3"
+      />
+      <Card
+              href="https://pbs.twimg.com/media/EVqochYXYAQJnHc.jpg"
+              title="Self-Care Bingo"
+              body="Play a Bingo to help take care of yourself 💙"
+      />
+    </ul>
+    <h2 class="text-mech-500 py-8 content-center font-sans"><span class="bg-clip-text text-6xl">Academic Resources</span></h2>
+    <p class="text-mech-500 leading-10">Every year, Mech Club assembles folders with each year’s core textbooks and old practice materials. These are located in our club Google Drive, and shared around the year group chats at the beginning of each semester.<br/>The relevant links are available below. We recommend using old tests for practice before midterms and exams!
+    </p> <!--academic resources-->
+    <ul role="list" class="link-card-grid p-4 grid gap-8">
+      <Card
+              href="https://drive.google.com/drive/folders/14paejQPp9wmwzW-UFxtoj9-HEUnRbAJ6?usp=sharing"
+              title="First Year Resources"
+              body=""
+      />
+      <CardAlternate
+              href="https://drive.google.com/drive/folders/1H45Wu4_mZQM6gK-liHj2zzjrvCCkYt5P?usp=sharing"
+              title="Second Year Resources"
+              body=""
+      />
+      <Card
+              href="https://drive.google.com/drive/folders/1VBfI4Naz4q9moXKg2p9__iO_INz5-zpU?usp=sharing"
+              title="Third Year Resources"
+              body=""
+      />
+    </ul>
+    <h2 class="text-mech-500 py-8 content-center font-sans"><span class="bg-clip-text text-6xl">Mental Health Resources</span></h2>
+    <p class="text-mech-500 leading-10">Check in with yourself regularly. Try out our tips below; if you need someone to talk to, please scroll down!
+    </p>
+    <h3 class="text-mech-500 py-5 content-center font-sans"><span class="bg-clip-text text-3xl font-bold">Tips to De-stress & Reduce Anxiety 💙</span></h3>
+<p class="text-mech-500 leading-10"><span class="bg-clip-text text-2xl">Quick Check List</span>
+      <ol class="list-inside list-decimal py-2">
+        <li>Does what I’m hearing in my head create a negative emotion in my mind?</li>
+        <li>Why is this thought making me feel a negative emotion?</li>
+        <li>Does this thought make sense?</li>
+      </ol>
+If this thought likely doesn’t make sense, and is likely not to occur, <span class="font-bold">abandon thought.</span>
+      <br/>
+      <br/>
+      <span class="bg-clip-text text-2xl">Try the following:</span>
+      <ol class="list-inside list-decimal py-2">
+        <li>Listen to your favourite songs</li>
+        <li>Talk to loved ones</li>
+        <li>Do a fun activity</li>
+        <li>Purchase a fidget toy (e.g. fidget spinner, tangle, rubik’s cube, putty, spaghetti ball, stress ball, flappy chain)</li>
+        <li>Invest time into mindful minutes, a helpful tool includes the mobile app “Headspace”</li>
+      <li>Read a book</li>
+      </ol>
+    <span class="font-bold">Remember, a proven way to quickly get rid of stress is to maximize time in a “flow” activity - any activity where you feel completely immersed throughout.</span>
+</p>
+    <h3 class="text-mech-500 py-5 content-center font-sans"><span class="bg-clip-text text-3xl font-bold">On-Campus Resources</span></h3>
+    <ul role="list" class="link-card-grid p-4 grid gap-8">
+      <Card
+              href="https://studentlife.utoronto.ca/department/health-wellness/"
+        title="Health & Wellness Centre: 416-978-8030, info.hwc@utoronto.ca"
+        body="The official UofT Health & Wellness Centre provides services for both physical and mental health, and hosts workshops that help students manage various aspects of the stress of university. It offers a lot, including certain immunizations, sexual health consultations, and nutrition counseling."
+      />
+      <CardAlternate
+              href="https://studentlife.utoronto.ca/service/myssp/"
+              title="U of T My Student Support Program (My SSP): 1-844-451-9700"
+              body="Outside of North America, call 001-416-380-6578. MySSP is a chat system that provide students with confidential, free, 24-hour support for any school, health, or general life concern."
+      />
+      <Card
+              href="https://good2talk.ca/ontario/"
+              title="Good2Talk Student Helpline: 1-866-925-5454"
+              body="Good2Talk is a chat system that provide students with confidential, free, 24-hour counselling for mental health and addiction."
+      />
+      <CardAlternate
+              href="https://gersteincentre.org/"
+              title="Gerstein Crisis Centre: 416-929-5200"
+              body="A 24-hour community based centre, specifically for those who are in crisis due to mental health issues or substance use."
+      />
+    </ul>
+    <h3 class="text-mech-500 py-5 content-center font-sans"><span class="bg-clip-text text-3xl font-bold">Off-Campus Resources</span></h3>
+    <ul role="list" class="link-card-grid p-4 grid gap-8">
+      <Card
+              href="https://togetherall.com/en-ca/"
+              title="TogetherAll"
+              body="An anonymous, online peer-to-peer support community, Togetherall focuses on more common and more insidious mental health issues such as anxiety and depression. The platform offers assistance for individuals at risk, but is designed for those who have a mild to moderate need for support."
+      />
+      <CardAlternate
+        href="https://www.dcogt.com/home-support"
+              title="Distress Centres of Greater Toronto: 416-408-HELP (4357)"
+              body="The DCoGT offer chat lines for people experiencing various difficulties, from general mental health concerns, to multilingual support and programs for those who are survivors of suicide or homicide."
+      />
+      <Card
+              href="http://www.camh.ca/"
+              title="The Centre for Addiction and Mental Health (CAMH): 416-535-8501, press 2"
+              body="CAMH is located on Spadina, minutes away from campus: the centre offers many services, and specifically critical mental health assistance, for various mental disorders and substance use."
+      />
+      <CardAlternate
+        href="https://kidshelpphone.ca/"
+              title="Kids Help Phone: 1-800-668-6868"
+              body="Kids Help Phone is a national service that offers anonymous, free counselling, 24/7 through text, on the phone, or on their website."
+      />
+      <Card
+              href="https://www.connexontario.ca/"
+              title="ConnexOntario: 1-866-531-2600"
+              body="ConnexOntario provides free and confidential 24/7 health services information for people experiencing problems with alcohol and drugs, mental illness and/or gambling. This service is accessible by email, by phone, or online."
+      />
+      <CardAlternate
+        href="https://www.crisisservicescanada.ca/en/"
+              title="Crisis Services Canada (Canada Suicide Prevention): 1-833-456-4566"
+              body="CSS is a national network of various crisis helplines. They specialize in supporting those who are affected by suicide, whether it is internal thoughts, concern for someone else, or loss due to suicide."
+      />
+      <Card
+              href="https://www.awhl.org/home"
+              title="Assaulted Women's Helpline: 416-863-0511"
+              body="The AWHL offers a 24-hour telephone crisis line to all women who have experienced abuse, providing counselling, emotional support, information and referrals. Over 200 languages are supported, and the system is completely confidential."
+      />
+      <CardAlternate
+        href="https://www.torontocentralhealthline.ca/displayservice.aspx?id=133949"
+              title="Central Intake Shelter (Housing): 416-338-4766"
+              body="This is the centralized system for city-managed temporary shelters, where homeless individuals can go to determine their next steps."
+      />
+    </ul>
+    <h2 class="text-mech-500 py-8 content-center font-sans"><span class="bg-clip-text text-6xl">Lockers</span></h2>
+<p class="text-mech-500 leading-10">Learn more about the lockers we rent below!
+    </p>
+    <ul role="list" class="link-card-grid p-4 grid gap-8">
+      <CardDark
+              href="/shop/"
+              title="Shop"
+              body="Check out our shop to learn more about our lockers (and see our cool merch collection)"
+      />
+    </ul>
+
+  </main>
+</Layout>
+
+<style>
+  .link-card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  }
+</style>

@@ -1,0 +1,61 @@
+---
+import Head from './Head.astro';
+import Navbar from './Navbar.astro';
+import '@fontsource/share-tech';
+
+const {
+    title = 'Mech Club',
+    description = 'We are creating a "commuterty" between commuting and non-commuting engineering students at the University of Toronto! We aim to foster a "commuterty" between commuters and non-commuters. This is a hub where commuters and non-commuters alike can have resources and guidance, lots of fun, and a space rant/rave about the TTC! Whether you are a commuter, transit enthusiast, or fun enjoyer, we are creating a commuterty for you!',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <Head {title} {description}/>
+    <body class="text-mech-500 bg-mech-100">
+        <Navbar />
+	<slot/>
+    </body>
+</html>
+<style is:global>
+	:root {
+        --accent-light: 235 247 255;
+        --accent: 25 104 168;
+        --accent-dark: 1 18 101;
+        --accent-extra: 66 198 235;
+        --accent-extra2: 202 242 202;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-extra)) 30%,
+			white 60%
+		);
+		--full-accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-dark)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+        background-color: rgb(var(--accent-light));
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+            Cascadia Code,
+			monospace;
+	}
+        @font-face {
+          font-family: 'FontAwesome';
+          src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css') format('woff');
+}
+</style>

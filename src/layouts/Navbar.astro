@@ -1,0 +1,92 @@
+<!-- Navbar -->
+---
+import { Image } from 'astro:assets'
+import logo from '../images/mechclublogo.png';
+import { Icon } from 'astro-icon/components'
+---
+<nav>
+  <!-- -->
+  <div class="fixed flex flex-wrap overflow-hidden m-0 px-7 bg-mech-200 w-full h-28 border-b-4 border-b-mech-500 content-center text-center items-stretch justify-between">
+    <!-- Left Hand Side up to # -->
+    <div class="flex flex-wrap gap-5 justify-left">
+      <a href="/./" class="mx-5" >
+        <Image src={logo} class="w-20 h-20 self-center" alt="Mech Club logo" loading="eager" width=400 height=400 />
+      </a>
+      <!-- for medium sized screens up until ## -->
+      <div class="hidden md:flex gap-3">
+        <div class="hidden lg:flex">
+          <a href="/about/" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center color-mech-500 bg-mech-100 w-32 h-16 font-bold">About Us</button>
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <a href="/about/" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center color-mech-500 bg-mech-100 w-24 h-16 font-bold">About</button>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="/resources/" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center color-mech-500 bg-mech-100 w-32 h-16 font-bold">Resources</button>
+          </a>
+        </div>
+        <div class="flex">
+          <a href="/shop/" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center color-mech-500 bg-mech-100 w-24 h-16 font-bold">Shop</button>
+          </a>
+        </div>
+      </div>
+      <!-- ## -->
+    </div>
+    <!-- # -->
+    <!-- Right Hand Side up to # -->
+    <div class="flex" >
+      <!-- for medium sized screens up until ## -->
+      <div class="float-right md:flex flex-wrap gap-2 justify-right align-center hidden">
+        <!-- Insta -->
+        <div class="flex" >
+          <a href="https://linktr.ee/mechclub" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center items-center place-center color-mech-500 bg-mech-100 w-16 h-16 font-bold">
+              <div class="flex place-items-center text-center justify-center" >
+                <Icon name="mdi:instagram" class="font-bold text-4xl m-0" />
+              </div>
+            </button>
+          </a>
+        </div>
+        <!-- Mail -->
+        <div class="flex" >
+          <a href="mailto:mechclub@g.skule.ca" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center items-center place-center color-mech-500 bg-mech-100 w-16 h-16 font-bold">
+              <div class="flex place-items-center text-center justify-center" >
+                <Icon name="mdi:email-outline" class="font-bold text-4xl m-0" />
+              </div>
+            </button>
+          </a>
+        </div>
+        <!-- LinkTree -->
+        <div class="flex" >
+          <a href="https://linktr.ee/mechclub" class="float-right items-center self-center color-mech-200" >
+            <button type="button" class="rounded-full border-4 border-mech-500 text-center items-center place-center color-mech-500 bg-mech-100 w-16 h-16 font-bold">
+              <div class="flex place-items-center text-center justify-center" >
+                <Icon name="mdi:link-plus" class="font-bold text-4xl m-0" />
+              </div>
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- ## -->
+      <div class="flex md:hidden">
+        <!-- Hamburger Menu -->
+        <div class="flex items-center justify-center text-center align-center" >
+          <button data-collapse-toggle="navbar-hamburger" type="button" class="rounded-full border-4 border-mech-500 text-center items-center place-center color-mech-500 bg-mech-100 w-52 h-16 font-bold">
+            <div class="flex place-items-center text-center justify-center text-2xl" > Menu (WIP)
+              <Icon name="mdi:hamburger-menu" class="font-bold text-4xl pl-2 m-0" />
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- ## -->
+    </div>
+    <!-- # -->
+  </div>
+</nav>
+
