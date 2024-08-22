@@ -1,6 +1,7 @@
 ---
 import Head from './Head.astro';
 import Navbar from './Navbar.astro';
+import Footer from './Footer.astro';
 import '@fontsource/share-tech';
 
 const {
@@ -15,6 +16,7 @@ const {
     <body class="text-mech-500 bg-mech-100">
         <Navbar />
 	<slot/>
+        <Footer />
     </body>
 </html>
 <style is:global>
