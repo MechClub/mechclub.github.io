@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/check": "^0.8.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/public-sans": "^5.0.19",
+    "@fontsource/poppins": "^5.0.15",
     "@fontsource/raleway": "^5.0.19",
     "@fontsource/share-tech": "^5.0.19",
     "astro": "^4.11.6",

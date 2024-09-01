@@ -5,13 +5,13 @@ import CardAlternate from '../components/CardAlternate.astro';
 import CardDark from '../components/CardDark.astro';
 ---
 <Layout>
-  <main class="m-auto p-4 max-w-full text-xl px-5 sm:px-24">
+  <main class="m-auto p-4 max-w-full text-xl sm:px-24">
     <span class="columns-2 flex md:shrink-0 justify-items-center items-center justify-evenly">
-        <h1 class="text-mech-500 pt-40 content-center font-bold font-sans px-9 bg-clip-text text-8xl">Resources!</h1>
+        <h1 class="text-mech-500 pt-40 content-center font-bold font-sans sm:px-9 bg-clip-text text-6xl sm:text-8xl">Resources!</h1>
     </span>
-    <p class="text-mech-500 py-1">Scroll below to find academic, mental health, & school resources.<br/>
+    <p class="text-mech-500 pt-9 pb-4">Scroll below to find academic, mental health, & school resources.<br/>
     </p>
-    <ul role="list" class="link-card-grid p-4 grid gap-8">
+    <ul role="list" class="link-card-grid grid gap-8">
       <Card
               href="https://prod.virtualagent.utoronto.ca/"
               title="Find Campus Resources"
@@ -28,10 +28,10 @@ import CardDark from '../components/CardDark.astro';
               body="Play a Bingo to help take care of yourself 💙"
       />
     </ul>
-    <h2 class="text-mech-500 py-8 content-center font-bold font-sans bg-clip-text text-6xl">Academic Resources</h2>
-    <p class="text-mech-500 leading-10">Every year, Mech Club assembles folders with each year’s core textbooks and old practice materials. These are located in our club Google Drive, and shared around the year group chats at the beginning of each semester.<br/>The relevant links are available below. We recommend using old tests for practice before midterms and exams!
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Academic Resources</h2>
+    <p class="text-mech-500 pb-4 leading-10">Every year, Mech Club assembles folders with each year’s core textbooks and old practice materials. These are located in our club Google Drive, and shared around the year group chats at the beginning of each semester. The relevant links are available below. We recommend using old tests for practice before midterms and exams!
     </p> <!--academic resources-->
-    <ul role="list" class="link-card-grid p-4 grid gap-8">
+    <ul role="list" class="link-card-grid grid gap-8">
       <Card
               href="https://drive.google.com/drive/folders/14paejQPp9wmwzW-UFxtoj9-HEUnRbAJ6?usp=sharing"
               title="First Year Resources"
@@ -48,10 +48,10 @@ import CardDark from '../components/CardDark.astro';
               body=""
       />
     </ul>
-    <h2 class="text-mech-500 py-8 content-center font-bold font-sans bg-clip-text text-6xl">Mental Health Resources</h2>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Mental Health Resources</h2>
     <p class="text-mech-500 leading-10">Check in with yourself regularly. Try out our tips below; if you need someone to talk to, please scroll down!
     </p>
-    <h3 class="text-mech-500 py-5 content-center font-bold font-sans bg-clip-text text-3xl">Tips to De-stress & Reduce Anxiety 💙</h3>
+    <h3 class="text-mech-500 pt-6 pb-4 content-center font-bold font-sans bg-clip-text text-2xl sm:text-3xl">Tips to De-stress & Reduce Anxiety 💙</h3>
 <p class="text-mech-500 leading-10"><span class="bg-clip-text text-2xl">Quick Check List</span>
       <ol class="list-inside list-decimal py-2">
         <li>Does what I’m hearing in my head create a negative emotion in my mind?</li>
@@ -72,8 +72,8 @@ If this thought likely doesn’t make sense, and is likely not to occur, <span c
       </ol>
     <span class="font-bold">Remember, a proven way to quickly get rid of stress is to maximize time in a “flow” activity - any activity where you feel completely immersed throughout.</span>
 </p>
-    <h3 class="text-mech-500 py-5 content-center font-bold font-sans bg-clip-text text-3xl">On-Campus Resources</h3>
-    <ul role="list" class="link-card-grid p-4 grid gap-8">
+    <h3 class="text-mech-500 pt-6 pb-4 content-center font-bold font-sans bg-clip-text text-2xl sm:text-3xl">On-Campus Resources</h3>
+    <ul role="list" class="link-card-grid grid gap-8">
       <Card
               href="https://studentlife.utoronto.ca/department/health-wellness/"
         title="Health & Wellness Centre: 416-978-8030, info.hwc@utoronto.ca"
@@ -95,8 +95,8 @@ If this thought likely doesn’t make sense, and is likely not to occur, <span c
               body="A 24-hour community based centre, specifically for those who are in crisis due to mental health issues or substance use."
       />
     </ul>
-    <h3 class="text-mech-500 py-5 content-center font-bold font-sans bg-clip-text text-3xl">Off-Campus Resources</h3>
-    <ul role="list" class="link-card-grid p-4 grid gap-8">
+    <h3 class="text-mech-500 pt-9 pb-4 content-center font-bold font-sans bg-clip-text text-2xl sm:text-3xl">Off-Campus Resources</h3>
+    <ul role="list" class="link-card-grid grid gap-8">
       <Card
               href="https://togetherall.com/en-ca/"
               title="TogetherAll"
@@ -138,10 +138,20 @@ If this thought likely doesn’t make sense, and is likely not to occur, <span c
               body="This is the centralized system for city-managed temporary shelters, where homeless individuals can go to determine their next steps."
       />
     </ul>
-    <h2 class="text-mech-500 py-8 content-center font-bold font-sans bg-clip-text text-6xl">Lockers</h2>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Mentorship</h2>
+<p class="text-mech-500 leading-10">Mech Club provides mentorship for first year Mech and TrackOne students! Sign up to be a mentor or mentee below!
+    </p>
+    <ul role="list" class="link-card-grid py-4 grid gap-8">
+      <Card
+              href="/shop/"
+              title="Mentorship (WIP)"
+              body="Become a mentee here"
+      />
+    </ul>
+    <h2 class="text-mech-500 pt-12 pb-4 content-center font-bold font-sans bg-clip-text text-4xl sm:text-6xl">Lockers</h2>
 <p class="text-mech-500 leading-10">Learn more about the lockers we rent below!
     </p>
-    <ul role="list" class="link-card-grid p-4 grid gap-8">
+    <ul role="list" class="link-card-grid py-4 grid gap-8">
       <CardDark
               href="/shop/"
               title="Shop"
