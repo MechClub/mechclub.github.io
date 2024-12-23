@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import CardAlternate from '../components/CardAlternate.astro';
-import CardDark from '../components/CardDark.astro';
 import Resources from '../components/Resources.astro'
 ---
 <Layout>
@@ -35,7 +34,7 @@ import Resources from '../components/Resources.astro'
 <p class="text-mech-500 leading-10">Mech Club provides mentorship for first year Mech and TrackOne students! Sign up to be a mentor or mentee below!
     </p>
     <ul role="list" class="link-card-grid py-4 grid gap-8">
-      <CardDark
+      <Card
               href="/mentorship/"
               title="Mentorship (WIP)"
               body="Become a mentee here"
@@ -45,10 +44,10 @@ import Resources from '../components/Resources.astro'
 <p class="text-mech-500 leading-10">Learn more about the lockers we rent below!
     </p>
     <ul role="list" class="link-card-grid py-4 grid gap-8">
-      <CardDark
-              href="/shop/"
-              title="Shop"
-              body="Check out our shop to learn more about our lockers (and see our cool merch collection)"
+      <Card
+              href="/lockers/"
+              title="Lockers"
+              body="Learn more about our lockers and rent them out"
       />
     </ul>
   </main>

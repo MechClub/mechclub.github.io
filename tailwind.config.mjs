@@ -10,11 +10,11 @@ export default {
             },
             colors: {
                 'mech': {
-                    100: 'rgb(var(--accent-light) / <alpha-value>)',
-                    200: 'rgb(var(--accent) / <alpha-value>)',
-                    300: 'rgb(var(--accent-extra) / <alpha-value>)',
-                    400: 'rgb(var(--accent-extra2) / <alpha-value>)',
-                    500: 'rgb(var(--accent-dark) / <alpha-value>)',
+                    100: '#ebf7ff',
+                    200: '#1968a8',
+                    300: '#42c6eb',
+                    400: '#caf2ca',
+                    500: '#011265',
                 }
             },
         },
